@@ -12,7 +12,7 @@ global_config_file=conf/global_settings.cfg
 ./scripts/prepare_config_files.sh $global_config_file
 ./scripts/prepare_config_files_for_synthesis.sh $global_config_file
 
-if [ ! -f  $global_config_file ]; then
+if [[ ! -f  $global_config_file ]]; then
     echo "Global config file doesn't exist"
     exit 1
 else
